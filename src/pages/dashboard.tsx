@@ -91,7 +91,7 @@ export default function Dashboard() {
   //     console.log('teste');
   //   }, 1000);
   //   return () => clearInterval(interval);
-  }, []);
+  // }, []);
 
 
   return (
@@ -108,7 +108,7 @@ export default function Dashboard() {
        <SideBar />
        <SimpleGrid flex="1" gap="4" minChildWidth="320px">
          <Box
-            p="8"
+            p={["6","8"]}
             bg="gray.800"
             borderRadius={8}
             pb="4">
@@ -116,7 +116,7 @@ export default function Dashboard() {
             <Chart options={options} series={series} type="area" height={160} />
           </Box>
           <Box
-            p="8"
+            p={["6","8"]}
             bg="gray.800"
             borderRadius={8}>
             <Text fontSize="lg" mb="4">Taxa de abertura</Text>
